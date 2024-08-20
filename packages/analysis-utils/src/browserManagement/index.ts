@@ -136,7 +136,8 @@ export class BrowserManagement {
           const isButtonForAccept = buttonNodes.filter(
             (cnode) =>
               cnode.textContent &&
-              (cnode.textContent.toLowerCase().includes('accept') ||
+              (cnode.textContent.toLowerCase().includes('ok') ||
+                cnode.textContent.toLowerCase().includes('accept') ||
                 cnode.textContent.toLowerCase().includes('allow') ||
                 cnode.textContent.toLowerCase().includes('agree'))
           );
